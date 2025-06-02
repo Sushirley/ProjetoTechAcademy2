@@ -11,40 +11,37 @@
 <body>
   <header>
     <nav class="navbar">
-
-    <div class="nav-center">
+      <div class="nav-center">
         <a href="index.html" title="Logo Victor Glamour">
           <img src="Img/Logo.png" alt="Logo Victor Glamour Hair" />
         </a>
-    </div>
-    
+      </div>
       <div class="menu-toggle" id="menu-toggle">☰</div>
       <ul class="nav-menu" id="menu">
         <li><a href="#" title="Início">Início</a></li>
-        <li><a href="#" title="Serviços">Serviços</a></li>
+        <li><a href="#servicos" title="Serviços">Serviços</a></li>
         <li><a href="#" title="Equipe">Equipe</a></li>
         <li><a href="#" title="Avaliações">Avaliações</a></li>
         <li><a href="#" title="Pacotes">Pacotes</a></li>
-        <li><a href="#" title="Agendamento">Agendamento</a></li>
+        <li><a href="#agendamento" title="Agendamento">Agendamento</a></li>
       </ul>
-
-     
     </nav>
   </header>
 
   <section class="conteudo">
-    <div class="imagem">
-      <img src="Img/1.png" alt="Imagem ilustrativa" />
+    <div class="imagem imagem-com-botao">
+      <a href="#agendamento" class="btn-sobreposta">Agende agora</a>
+      <img src="Img/Banner.png" alt="Imagem ilustrativa" />
     </div>
   </section>
 
-  <section class="conteudo">
-    <div class="imagem">
-      <img src="Img/2.png" alt="Imagem ilustrativa" />
-    </div>
+  <section id="servicos" class="conteudo servicos-section">
+    <h2 class="titulo-section">Serviços</h2>
   </section>
+
+  <button onclick="voltarAoTopo()" id="btnTopo" title="Voltar ao topo">&uarr;</button>
 
   <script src="js/menu.js"></script>
-
+  <script src="js/scroll-top.js"></script>
 </body>
 </html>
