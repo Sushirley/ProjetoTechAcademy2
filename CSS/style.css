@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: #ea9fa2;
+  background-color: #ff9999;
   padding: 10px 20px;
   position: relative;
 }
@@ -55,7 +55,7 @@ header {
 }
 
 .nav-menu li a:hover {
-  color: #7d414c;
+  color: #e899a8;
 }
 
 .nav-center img {
@@ -72,7 +72,7 @@ header {
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #ea9fa2;
+    background-color: #bd6e70;
     flex-direction: column;
     gap: 15px;
     padding: 15px 25px;
@@ -131,8 +131,8 @@ header {
   top: 80%;
   left: 30%;
   transform: translate(-50%, -50%);
-  background-color: #fc758e;
-  color: #9b1068;
+  background-color: #ce7b8b;
+  color: #ffebf3;
   padding: 20px 30px;   
   font-size: 30px;         
   border-radius: 55px;
@@ -177,7 +177,7 @@ header {
 }
 
 #btnTopo:hover {
-  background-color: #944343;
+  background-color: #bb6666;
 }
 
 .titulo-section {
@@ -185,7 +185,7 @@ header {
   font-size: 32px;
   font-weight: 600;
   margin: 40px 0 20px;
-  color: #7d414c;
+  color: #b8717e;
 }
 
 
@@ -198,4 +198,7 @@ html {
   padding: 60px 20px;
 }
 
-
+#Equipe {
+  background-color: #ea9fa2;
+  padding: 60px 20px;
+}
