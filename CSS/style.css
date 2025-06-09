@@ -5,12 +5,12 @@
 }
 
 body {
-  background-color: #ea9fa2;
+  background-color: #c46a7e;
   font-family: 'Poppins', sans-serif;
 }
 
 header {
-  background-color: #ff9999;
+  background-color: #c46a7e;
   padding: 10px 20px;
   position: relative;
 }
@@ -128,13 +128,13 @@ header {
 
 .btn-sobreposta {
   position: absolute;
-  top: 80%;
-  left: 30%;
+  top: 75%;
+  left: 29%;
   transform: translate(-50%, -50%);
   background-color: #ce7b8b;
   color: #ffebf3;
-  padding: 20px 30px;   
-  font-size: 30px;         
+  padding: 20px 40px;   
+  font-size: 26px;         
   border-radius: 55px;
   text-decoration: none;
   font-weight: 600;
@@ -146,7 +146,7 @@ header {
 
 
 .btn-sobreposta:hover {
-  background-color: #ff7e9f;
+  background-color: #843a4d;
 }
 
 
@@ -169,15 +169,15 @@ header {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #da7d7d;
-  color: white;
+  background-color: #ffcad5;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 8px;
 }
 
 #btnTopo:hover {
-  background-color: #bb6666;
+  background-color: #843a4d;
 }
 
 .titulo-section {
@@ -185,7 +185,7 @@ header {
   font-size: 32px;
   font-weight: 600;
   margin: 40px 0 20px;
-  color: #b8717e;
+  color: #ffcad5;
 }
 
 
@@ -194,7 +194,7 @@ html {
 }
 
 #servicos {
-  background-color: #ea9fa2;
+  background-color: #c46a7e;
   padding: 60px 20px;
 }
 
