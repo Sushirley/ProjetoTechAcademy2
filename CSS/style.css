@@ -80,7 +80,7 @@ header {
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #bd6e70;
+    background-color: #c46a7e;
     flex-direction: column;
     gap: 15px;
     padding: 15px 25px;
@@ -249,13 +249,13 @@ html {
 .secao-imagem {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
 }
 
 .secao-imagem img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -268,4 +268,33 @@ html {
   color: #fff;
   text-align: center;
   z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .secao-imagem {
+    height: auto;
+  }
+
+  .secao-imagem img {
+    height: auto;
+  }
+
+  .texto-sobreposto {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .texto-sobreposto h2 {
+    font-size: 18px;
+  }
+
+  .btn-sobreposta {
+    font-size: 12px;
+    padding: 10px 20px;
+    top: 75%;
+    left: 50%;
+  }
 }
