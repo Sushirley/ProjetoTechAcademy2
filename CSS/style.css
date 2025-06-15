@@ -8,7 +8,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Impede scroll horizontal */
+  overflow-x: hidden; 
 }
 
 
@@ -63,7 +63,7 @@ header {
 }
 
 .nav-menu li a:hover {
-  color: #e899a8;
+  color: #530311;
 }
 
 .nav-center img {
@@ -298,3 +298,64 @@ html {
     left: 50%;
   }
 }
+
+.secao-servicos {
+  background-image: url('../Img/grande.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #843a4d;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.conteudo-servicos {
+  background-color: rgba(221, 252, 255, 0.5); 
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+}
+
+
+.titulo-servicos {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.galeria-servicos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.galeria-servicos img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 768px) {
+  .titulo-servicos {
+    font-size: 24px;
+  }
+
+  .conteudo-servicos {
+    padding: 20px;
+  }
+
+  .galeria-servicos img {
+    width: 100px;
+  }
+}
+
