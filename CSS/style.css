@@ -300,18 +300,19 @@ html {
 }
 
 .secao-servicos {
-  background-image: url('../Img/grande.png'); 
+  background-image: url('../Img/2.png'); /* Ajuste o caminho conforme sua estrutura */
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; 
+  background-position: center center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #843a4d;
+  color: #b54762;
   position: relative;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  height: 98vh; /* 90% da altura da tela */
 }
 
 
@@ -350,12 +351,172 @@ html {
     font-size: 24px;
   }
 
-  .conteudo-servicos {
-    padding: 20px;
+   .conteudo-servicos {
+    padding: 15px;
+    transform: translateY(-40px); /* sobe a box */
   }
 
   .galeria-servicos img {
-    width: 100px;
+    width: 80px;
+  }
+
+  .secao-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* cola no topo */
+    padding-top: 40px; /* ajusta se quiser um espacinho */
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #000000;
   }
 }
+
+
+
+.secao-dicas {
+  background-image: url('../Img/4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b54762;
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  height: 98vh; /* 90% da altura da tela */
+
+
+}
+
+.conteudo-dicas {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7); /* transparência */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.titulo-dicas {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(142, 47, 64, 0.6);
+}
+
+.galeria-dicas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.galeria-dicas img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .titulo-dicas {
+    font-size: 24px;
+  }
+
+  .conteudo-dicas {
+    padding: 20px;
+    margin-top: auto; /* Faz com que a box fique mais acima da imagem */
+  }
+
+  .galeria-dicas img {
+    width: 100px;
+  }
+
+.secao-dicas {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #c46b7f;
+  height: 100vh; /* <-- Isso faz a imagem aparecer inteira, e a box ficar acima */
+  display: flex;
+  align-items: flex-end; /* Faz a box "subir" um pouco */
+  justify-content: center;
+  padding-bottom: 550px; /* Dá um espaço da base */
+}
+
+}
+
+
+.secao-sobre {
+  background-image: url('../Img/3.png'); /* Caminho da imagem de fundo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b54762;
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  height: 98vh; /* 90% da altura da tela */
+}
+
+
+.conteudo-sobre {
+  background-color: rgba(221, 252, 255, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.titulo-sobre {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.galeria-sobre {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.galeria-sobre img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .titulo-sobre {
+    font-size: 24px;
+  }
+
+  .conteudo-sobre {
+    padding: 20px;
+  }
+
+  .galeria-sobre img {
+    width: 100px;
+  }
+
+  .secao-sobre {
+    background-size: contain; /* ou 'cover', se preferir */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #f7b9b9; /* opcional, se sua imagem não cobrir tudo */
+    height: auto; /* ou ajuste conforme sua necessidade, tipo 70vh */
+  }
+}
+
 
