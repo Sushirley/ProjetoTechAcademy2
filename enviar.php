@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hora = $_POST["hora"];
     $mensagem = htmlspecialchars($_POST["mensagem"]);
 
-    $destinatario = "shirley.layy@gmail.com"; // 🔁 Troque para o seu e-mail real
+    $destinatario = "tikvictoor@gmail.com";
     $assunto = "Novo Agendamento de $nome";
     
     $corpo = "Você recebeu um novo agendamento:\n\n";
