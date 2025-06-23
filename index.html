@@ -18,22 +18,25 @@
       </div>
       <div class="menu-toggle" id="menu-toggle">☰</div>
       <ul class="nav-menu" id="menu">
-        <li><a href="#" title="Início">Início</a></li>
+        <li><a href="index.html" title="Início">Início</a></li>
         <li><a href="#servicos" title="Serviços">Serviços</a></li>
-        <li><a href="sobre.php" target="_blank" title="sobre">Sobre</a></li>
+        <li><a href="#sobre" title="Sobre">Sobre</a></li>
         <li><a href="#Avaliações" title="Avaliações">Avaliações</a></li>
         <li><a href="#Dicas" title="Dicas">Dicas</a></li>
-        <li><a href="#agendamento" title="Agendamento">Agendamento</a></li>
+        <li><a href="agendamento.php" target="_blank" class="btn-agendamento" title="Agendamento">Agendamento</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="conteudo">
-    <div class="imagem imagem-com-botao">
-      <a href="#agendamento" class="btn-sobreposta">Agende agora</a>
-      <img src="Img/BannerPrincipal.png" alt="Imagem ilustrativa" />
-    </div>
-  </section>
+  
+<section class="conteudo">
+  <div class="imagem imagem-com-botao">
+    <a href="agendamento.php" target="_blank" class="btn-sobreposta">Agende agora</a>
+    <img src="Img/BannerPrincipal.png" alt="Imagem ilustrativa" />
+  </div>
+  <div class="botoes-extra"></div>
+</section>
+
 
 <section id="servicos" class="secao-servicos">
   <div class="conteudo-servicos">
@@ -43,16 +46,21 @@
       <img src="Img/Escova.png" alt="Serviço 2">
       <img src="Img/Hidratação.png" alt="Serviço 3">
     </div>
+    <div class="botao-dicas">
+      <a href="servicos.php" target="_blank" class="btn-destaque">Agendar agora!</a>
+    </div>
   </div>
 </section>
+
 
 <section id="sobre" class="secao-sobre">
   <div class="conteudo-sobre">
     <h2 class="titulo-sobre">Sobre o salão</h2>
     <div class="galeria-sobre">
       <img src="Img/Progressiva.png" alt="Serviço 1">
-      <img src="Img/Escova.png" alt="Serviço 2">
-      <img src="Img/Hidratação.png" alt="Serviço 3">
+    </div>
+    <div class="botao-dicas">
+      <a href="sobre.php" target="_blank" class="btn-destaque">Saiba mais</a>
     </div>
   </div>
 </section>
@@ -61,11 +69,15 @@
 <section id="dicas" class="secao-dicas">
   <div class="conteudo-dicas">
     <h2 class="titulo-dicas">Confira nossas dicas</h2>
+    <div class="botao-dicas">
+      <a href="dicas.php" target="_blank" class="btn-destaque">Ver Dicas</a>
+    </div>
     <div class="galeria-dicas">
-        <img src="Img/Progressiva.png" alt="Serviço 1">
+      <img src="Img/Progressiva.png" alt="Serviço 1">
     </div>
   </div>
 </section>
+
 
 
   <button onclick="voltarAoTopo()" id="btnTopo" title="Voltar ao topo">&uarr;</button>

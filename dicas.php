@@ -10,7 +10,7 @@ $anoAtual = date("Y");
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Sobre Nós - Victor Glamour Hair</title>
+  <title>Agendamento - Victor Glamour Hair</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,12 +24,6 @@ $anoAtual = date("Y");
       </div>
       <div class="menu-toggle" id="menu-toggle">☰</div>
       <ul class="nav-menu" id="menu">
-        <li><a href="#" title="Início">Início</a></li>
-        <li><a href="#servicos" title="Serviços">Serviços</a></li>
-        <li><a href="sobre.php" target="_blank" title="sobre">Sobre</a></li>
-        <li><a href="#Avaliações" title="Avaliações">Avaliações</a></li>
-        <li><a href="#Dicas" title="Dicas">Dicas</a></li>
-        <li><a href="#agendamento" title="Agendamento">Agendamento</a></li>
       </ul>
     </nav>
   </header>
