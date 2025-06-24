@@ -325,6 +325,21 @@ html {
 }
 
 
+.img-servicos {
+  width: 450px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .img-servicos {
+    width: 160px;
+  }
+}
+
 .titulo-servicos {
   font-size: 36px;
   font-weight: bold;
@@ -345,6 +360,12 @@ html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.texto-servicos {
+  font-size: 20px; /* ou 20px, por exemplo */
+  line-height: 1.6;  /* para espaçamento entre linhas */
+}
+
+
 
 @media (max-width: 768px) {
   .titulo-servicos {
@@ -355,6 +376,7 @@ html {
     padding: 15px;
     transform: translateY(-40px);
   }
+
 
   .galeria-servicos img {
     width: 80px;
@@ -387,7 +409,7 @@ html {
   }
 
   #servicos .conteudo-servicos p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   #servicos .conteudo-servicos img {
@@ -415,19 +437,19 @@ html {
   text-align: center;
   padding: 40px 20px;
   box-sizing: border-box;
-  height: 98vh; 
-
-
+  height: 98vh;
 }
 
 .conteudo-dicas {
-  position: relative;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.7); 
-  padding: 20px;
+  background-color: rgba(221, 252, 255, 0.5);
+  padding: 40px;
   border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
 }
-
 
 .titulo-dicas {
   font-size: 36px;
@@ -449,6 +471,7 @@ html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Media Query para mobile/tablet */
 @media (max-width: 768px) {
   .titulo-dicas {
     font-size: 24px;
@@ -456,26 +479,25 @@ html {
 
   .conteudo-dicas {
     padding: 20px;
-    margin-top: auto; 
+    margin-top: auto;
   }
 
   .galeria-dicas img {
     width: 100px;
   }
 
-.secao-dicas {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: #c46b7f;
-  height: 100vh; 
-  display: flex;
-  align-items: flex-end; 
-  justify-content: center;
-  padding-bottom: 550px; 
-}
+  .secao-dicas {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #c46b7f;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 550px;
+  }
 
-@media (max-width: 768px) {
   .secao-dicas .conteudo-dicas {
     padding: 5px;
   }
@@ -485,21 +507,22 @@ html {
   }
 
   .secao-dicas .conteudo-dicas p {
-    font-size: 10px;
+    font-size: 22px;
   }
 
-  .secao-dicas .conteudo-dicas img {
-    width: 90px; 
+  /* Aqui ajusta o tamanho da imagem no mobile */
+  .secao-dicas .conteudo-dicas img.img-sobre {
+    width: 200px;
     height: auto;
   }
 
-  .secao-dicas .conteudo-dicas button {
+  .secao-dicas .conteudo-dicas button,
+  .secao-dicas .conteudo-dicas .btn-destaque {
     font-size: 10px;
     padding: 4px 8px;
   }
 }
 
-}
 
 
 .secao-sobre {
@@ -525,6 +548,14 @@ html {
   border-radius: 10px;
   max-width: 900px;
   width: 100%;
+}
+
+.img-sobre {
+  width: 450px;         /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .titulo-sobre {
@@ -556,9 +587,12 @@ html {
     padding: 20px;
   }
 
-  .galeria-sobre img {
-    width: 100px;
+  @media (max-width: 768px) {
+  .img-sobre {
+    width: 180px;
   }
+}
+
 
   .secao-sobre {
     background-size: contain; 
@@ -632,4 +666,128 @@ html {
   color: #fff  !important;
 }
 
+
+@media (min-width: 768px) {
+  .titulo-servicos {
+    font-size: 50px; /* ou o tamanho que preferir para desktop */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-servicos {
+    display: none;
+  }
+}
+
+
+/* Seção principal */
+.secao-avaliacoes {
+  background-image: url('../Img/5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b54762;
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* Box transparente */
+.conteudo-avaliacoes {
+  background-color: rgba(221, 252, 255, 0.5); /* igual ao sobre */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+/* Título */
+.titulo-avaliacoes {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Cards container */
+.avaliacoes-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cada card */
+.card-avaliacao {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.card-avaliacao:hover {
+  transform: scale(1.02);
+}
+
+.texto-avaliacao {
+  font-size: 16px;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.cliente {
+  font-weight: bold;
+  color: #b54762;
+  font-size: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .secao-avaliacoes {
+    padding: 30px 15px;
+    background-size: contain;
+    background-position: top center;
+    margin-top: -60px;
+  }
+
+  .conteudo-avaliacoes {
+    padding: 20px;
+  }
+
+  .titulo-avaliacoes {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .avaliacoes-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card-avaliacao {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .texto-avaliacao {
+    font-size: 15px;
+  }
+
+  .cliente {
+    font-size: 14px;
+  }
+}
 
